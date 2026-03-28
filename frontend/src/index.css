@@ -1,0 +1,318 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background:
+      radial-gradient(circle at top, rgba(59, 130, 246, 0.18), transparent 30%),
+      radial-gradient(circle at 85% 15%, rgba(139, 92, 246, 0.16), transparent 26%),
+      #020617;
+  }
+
+  body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: transparent;
+    color: #e2e8f0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  #root {
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply border border-white/10 bg-white/5 backdrop-blur-2xl;
+  }
+
+  .glass-card {
+    @apply border border-white/10 bg-white/5 backdrop-blur-xl;
+  }
+
+  .neon-button {
+    @apply transition-[transform,box-shadow,background-color,border-color] duration-200 ease-out;
+  }
+
+  .neon-border {
+    box-shadow:
+      0 0 0 1px rgba(34, 211, 238, 0.18),
+      0 0 28px rgba(34, 211, 238, 0.12),
+      inset 0 0 18px rgba(168, 85, 247, 0.06);
+  }
+
+  .desktop-main {
+    @apply grid min-h-0;
+  }
+
+  .desktop-output-grid {
+    @apply grid min-h-0;
+    grid-template-columns: 1fr;
+  }
+
+  .output-card {
+    height: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .dashboard-screen {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .sidebar {
+    width: 300px;
+    height: 100vh;
+    background: rgba(20, 20, 30, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    overflow-y: auto;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    flex: 0 0 auto;
+  }
+
+  .profile-card {
+    margin-bottom: 15px;
+  }
+
+  .profile-summary {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .profile-mini-box {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid rgba(0, 255, 255, 0.15);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.08);
+    font-size: 12px;
+  }
+
+  .logout-btn {
+    text-align: left;
+    margin-top: 8px;
+    font-size: 12px;
+    opacity: 0.8;
+    color: #e2e8f0;
+  }
+
+  .label {
+    color: #a0a0a0;
+  }
+
+  .value {
+    font-weight: 700;
+    font-size: 16px;
+    color: #f8fafc;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .section-title {
+    color: #8be9fd;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .edit-btn {
+    background: linear-gradient(90deg, #00f0ff, #00ffa6);
+    border: none;
+    border-radius: 30px;
+    color: #020617;
+    font-weight: 700;
+    transition: 0.3s;
+  }
+
+  .edit-btn:hover {
+    box-shadow: 0 0 15px #00f0ff;
+  }
+
+  .example-box {
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 12px;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .example-box p {
+    margin: 5px 0;
+  }
+
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow: hidden;
+    min-width: 0;
+    min-height: 0;
+  }
+
+  .content-panel {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 0;
+  }
+
+  .scenario-box {
+    flex: 0 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .content-body {
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .sim-output-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1fr;
+    gap: 20px;
+  }
+
+  .sim-card {
+    min-height: 220px;
+    max-height: 300px;
+    padding: 20px;
+    overflow-y: auto;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .output-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    align-items: stretch;
+  }
+
+  .card {
+    height: 200px;
+    padding: 15px;
+    overflow-y: auto;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .card p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .card p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}
+
+@media (min-width: 1024px) {
+  @layer components {
+    .desktop-main {
+      grid-template-columns: 35% 65%;
+      align-items: stretch;
+      height: 100%;
+    }
+
+    .desktop-output-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 15px;
+      align-items: stretch;
+    }
+
+    .profile-summary {
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  @layer components {
+    html,
+    body,
+    #root {
+      overflow: auto;
+      height: auto;
+    }
+
+    .dashboard-screen,
+    .main-container {
+      height: auto;
+      overflow: visible;
+    }
+
+    .main-container {
+      flex-direction: column;
+    }
+
+    .sidebar {
+      width: 100%;
+      height: auto;
+      max-height: none;
+    }
+
+    .content {
+      overflow: visible;
+      padding: 16px;
+    }
+
+    .content-panel,
+    .content-body,
+    .desktop-main,
+    .output-container,
+    .sim-output-container,
+    .desktop-output-grid {
+      min-height: auto;
+      height: auto;
+      overflow: visible;
+    }
+
+    .output-container,
+    .sim-output-container {
+      grid-template-columns: 1fr;
+    }
+
+    .output-card,
+    .card,
+    .sim-card {
+      height: auto;
+      max-height: none;
+    }
+  }
+}
