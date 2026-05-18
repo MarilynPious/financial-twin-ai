@@ -5,7 +5,7 @@ const Groq = require("groq-sdk");
 const mongoose = require("mongoose");
 const User = require("./models/User");
 
-mongoose.connect("mongodb+srv://admin:admin123@cluster0.tgzqffg.mongodb.net/?appName=Cluster0")
+mongoose.connect(process.env.MONGODB_URI)
   .then(() => console.log("MongoDB Connected"))
   .catch(err => console.log(err));
 const app = express();
