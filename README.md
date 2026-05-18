@@ -155,8 +155,9 @@ npm start
 
 ## Team
 
-* Marilyn Pious
-* Team Members
+* Marilyn Pious T
+* Monika B
+* Dheeraj D
 
 ---
 
