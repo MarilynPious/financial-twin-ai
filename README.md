@@ -1,85 +1,67 @@
-# 💡 Financial Twin AI
+# Financial Twin AI – Personalized Financial Intelligence Platform
 
-**From financial noise → clear decisions**
-
-Financial Twin AI is a real-time decision engine that transforms financial events into **personalized, actionable insights** based on a user's financial profile.
+Financial Twin AI is a real-time financial decision platform that analyzes live financial events and generates personalized recommendations based on individual financial profiles. The system combines AI-driven analysis with full-stack architecture to help users make smarter financial decisions through contextual insights and scenario-based simulations.
 
 ---
 
-## 🚀 Problem
+## Problem Statement
 
-Users today are exposed to massive amounts of financial data — news, alerts, trends — but:
-
-* It is **not personalized**
-* It is **hard to interpret**
-* It does not answer: **“What should I do?”**
-
-👉 Users are informed, but unable to decide.
+Financial information today is fragmented, overwhelming, and difficult to personalize. Users often struggle to understand how market events, financial trends, and economic changes directly impact their personal financial decisions.
 
 ---
 
-## 💡 Solution
+## Solution
 
-Financial Twin AI builds a **digital financial twin** of the user and:
+Financial Twin AI creates a personalized digital financial profile and processes real-time financial events to deliver:
 
-* Filters relevant financial events
-* Analyzes impact based on user data
-* Provides **clear decisions and recommendations**
-
----
-
-## 🧠 How It Works
-
-```text
-User Profile → Market Events → Smart Filtering → AI Analysis → Decision Output
-```
+* Personalized financial insights
+* Context-aware recommendations
+* Smart alerts and impact analysis
+* Scenario-based financial simulations
 
 ---
 
-## ⚙️ Core Features
+## Key Features
 
-### 🔹 Financial Twin
+### Personalized Financial Twin
 
-* Personalized user profile
-* Income, expenses, savings, risk level
+* Builds user-specific financial profiles based on income, savings, expenses, and risk preferences
 
-### 🔹 Smart Alerts
+### Smart Financial Alerts
 
-* Real-time financial events
-* Only relevant alerts shown
+* Filters and delivers only relevant financial updates and market events
 
-### 🔹 Decision Engine
+### AI-Powered Decision Engine
 
-* 📊 Impact analysis
-* ✅ Recommended action
-* 🔁 Better alternatives
+* Generates personalized recommendations using contextual financial analysis
 
-### 🔹 Simulation Engine
+### Scenario Simulation
 
-* Test “what-if” scenarios
-* Make better financial decisions
+* Enables users to evaluate “what-if” financial situations before making decisions
 
 ---
 
-## 📊 Example Use Case
+## Example Use Case
 
-**Scenario:** “Can I buy a car?”
-**Market Condition:** Interest rates increased
+Scenario: “Should I buy a car now?”
 
-### Output:
+Market Condition:
 
-* **Impact:** Higher loan burden
-* **Action:** Delay purchase
-* **Alternative:** Increase savings or reduce EMI
+* Rising interest rates
+
+AI Recommendation:
+
+* Delay purchase due to increased loan burden
+* Suggested alternative: Improve savings or reduce EMI exposure
 
 ---
 
-## 🏗️ Tech Stack
+## Tech Stack
 
 ### Frontend
 
 * React.js
-* CSS (Glassmorphism + Neon UI)
+* CSS
 
 ### Backend
 
@@ -90,60 +72,62 @@ User Profile → Market Events → Smart Filtering → AI Analysis → Decision 
 
 * MongoDB Atlas
 
-### AI Layer
+### AI Integration
 
-* LLM-based decision engine (Groq / OpenAI)
+* Groq API / OpenAI API
 
 ---
 
-## 🖥️ Setup Instructions
+## System Workflow
 
-### 1. Clone Repository
+```text
+User Profile → Financial Event Processing → AI Analysis → Personalized Recommendations
+```
+
+---
+
+## Setup Instructions
+
+### Clone Repository
 
 ```bash
 git clone https://github.com/MarilynPious/financial-twin-ai.git
 cd financial-twin-ai
 ```
 
----
+### Install Dependencies
 
-### 2. Install Dependencies
-
-#### Backend
+Backend:
 
 ```bash
 cd backend
 npm install
 ```
 
-#### Frontend
+Frontend:
 
 ```bash
 cd frontend
 npm install
 ```
 
----
+### Configure Environment Variables
 
-### 3. Add Environment Variables
-
-Create `.env` file in backend:
+Create a `.env` file inside the backend directory:
 
 ```env
 GROQ_API_KEY=your_api_key_here
 ```
 
----
+### Run the Application
 
-### 4. Run Project
-
-#### Backend
+Backend:
 
 ```bash
 node server.js
 ```
 
-#### Frontend
+Frontend:
 
 ```bash
 npm start
@@ -151,32 +135,31 @@ npm start
 
 ---
 
-## 🎯 Impact
+## Impact
 
-* Reduces decision confusion
-* Saves time
-* Improves financial planning
-* Enables smarter choices
-
----
-
-## 🏁 Conclusion
-
-Financial Twin AI converts **real-world financial events into personalized decisions in real time.**
+* Simplifies complex financial decision-making
+* Delivers personalized financial intelligence
+* Improves financial planning through AI-driven insights
+* Enhances user decision confidence with scenario analysis
 
 ---
 
-## 👥 Team
+## Future Enhancements
+
+* Real-time market API integrations
+* Advanced predictive analytics
+* Multi-user financial dashboards
+* AI-based budgeting and forecasting
+
+---
+
+## Team
 
 * Marilyn Pious
 * Team Members
 
 ---
 
-## 📌 Note
+## Note
 
-Sensitive data like API keys are excluded using `.env` and `.gitignore`.
-
----
-
-⭐ If you like this project, feel free to star the repository!
+Sensitive credentials and API keys are secured using `.env` configuration and `.gitignore`.
